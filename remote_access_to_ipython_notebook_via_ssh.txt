@@ -1,0 +1,12 @@
+
+see https://coderwall.com/p/ohk6cg/remote-access-to-ipython-notebooks-via-ssh
+
+In summary:
+
+1. start a notebook on the server
+2. start `ssh -N -f -L localhost:9999:localhost:8888 user@remote_host` 
+
+-N: says that no remote commands will be executed 
+-f: go to background 
+-L: list the ports foward config (remote port 8888 to local 9999)
+
